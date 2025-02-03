@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de dose</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <script src="calcul_de_dose script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>calculateur de dose</h1>
+    </header>
+
+    <div class="container">
+        <div class="description">
+            <p>Déterminez le volume de liquide à prélever dans une solution ou la quantité de comprimés en fonction de la concentration du médicament disponible.</p>
+        </div>
+
+        <p>Dose prescrite (en mg)</p>
+        <input id="dose_prescrite" type="number" placeholder="Ex: 1 mg">
+
+        <p>Concentration disponible (en mg)</p>
+        <input id="dose_disponible" type="number" placeholder="Ex: 1 mg">
+
+        <p>Volume (en mL)</p>
+        <input id="volume" type="number" placeholder="Ex: 1 mL">
+
+        <br>
+
+        <button onclick="calcul_de_dose()">Calculer</button>
+
+        <div>
+            <p id="resultat_dose"></p>
+        </div>
+
+        <!-- Convertisseur d'unités intégré -->
+        <p>Valeur à convertir :</p>
+        <input id="valeur_convertir" type="number" placeholder="Entrez une valeur à convertir">
+        <p>Unité source :</p>
+        <select id="unite_source">
+            <option value="mg">mg</option>
+            <option value="g">g</option>
+            <option value="ml">ml</option>
+            <option value="cl">cl</option>
+        </select>
+        <p>Unité cible :</p>
+        <select id="unite_cible">
+            <option value="g">g</option>
+            <option value="mg">mg</option>
+            <option value="cl">cl</option>
+            <option value="ml">ml</option>
+        </select>
+        <button onclick="convertir_unite()">Convertir</button>
+        <p id="resultat_conversion"></p>
+
+        <div class="description">
+            <p>Les professionnelles en soins infirmiers sont souvent confrontées à des calculs de doses de médicaments dans leur pratique. Elles doivent s’assurer que les patients reçoivent la bonne dose de médicament.</p>
+        </div>
+    </div>
+    <div class="calculator-links"><a href="page d'accueil.html" class="btn">Retour au sommaire</a></div>
+    <footer>
+        
+        <p>El-bahnsy Noor</p>
+    </footer>
+</body>
+
+</html>

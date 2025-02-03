@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul d'IMC</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header> 
+        <h1>Calcul de l'IMC</h1> 
+    </header>
+    
+    <div class="container">
+        
+        <div class="imc-info">
+            <p>L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids corporel et votre taille, quel que soit votre sexe. </p>
+        </div>
+
+        
+        <p>Taille en mètres:</p>
+        <input id="taille" type="number" placeholder="Ex: 1.75">
+        
+        <p>Poids en kilogrammes:</p>
+        <input id="poids" type="number" placeholder="Ex: 70">
+
+        <br>
+        <button class="btn" onclick="calcul()">Valider</button>
+
+        <div>
+            <p id="resultat"></p>
+        </div>
+
+        <div class="description">
+            <p>
+                L’indice de masse corporelle (IMC) est le seul indice validé par l’Organisation mondiale de la santé pour évaluer la corpulence d’un individu et donc les éventuels risques pour la santé. L’IMC permet de déterminer si l’on est en situation de maigreur, de surpoids ou d’obésité par exemple.
+            </p>
+        </div>
+    </div>
+</body>
+<div class="calculator-links"><a href="page d'accueil.html" class="btn">Retour au sommaire</a></div>
+<footer>
+    <p>El-bahnsy Noor</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>  
+</html>
+

@@ -1,0 +1,130 @@
+body {
+    background-color: #f8f9fa; 
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #444;
+}
+
+input {
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+
+.welcome-box {
+    background: #e0e0e0;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.calculator-section {
+    margin-bottom: 20px;
+}
+
+
+.calculator-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.calculator-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+.btn {
+    background: #d1d1d1;
+    color: #333;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    width: 80%;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #bcbcbc;
+    transform: scale(1.05);
+}
+
+
+.btn:active {
+    background: #f1f3f5;
+    transform: scale(0.98); 
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.imc-info {
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f1f3f5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.imc-info strong {
+    font-weight: bold;
+}
+
+
+.description {
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f3f5;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+}
+
+
+.imc-description strong {
+    font-weight: bold;
+}
+

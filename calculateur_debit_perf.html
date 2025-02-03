@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur debit perfusion</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <script src="calcul_debit_perf.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculateur de débit de perfusion</h1>                                                                                   <!-- itre de la page-->
+    </header>
+    <div class="container">
+        
+        <div class="imc-info">
+            <p>Un calculateur de débit est un outil permettant de déterminer le débit d’une perfusion en fonction de la dose prescrite.</p>
+        </div>
+        <p>Volume à administrer</p>
+        <input id="volumeA" type="number" placeholder="Ex: 1 mL">
+
+        <p>Durée de la perfusion</p>
+        <input id="dureeP" type="number" placeholder="Ex: 20 min">
+
+        <p>Calibre du perfuseur</p>
+        <input id="calibreP" type="number" placeholder="Ex: 5 gtt/mL">
+        <br>
+        <button onclick="calculateur_perfusion()">Calculer</button>
+        <div>
+            <p id="resultatPerf"></p>
+        </div>
+        
+
+    </div>
+    <div class="calculator-links"><a href="page d'accueil.html" class="btn">Retour au sommaire</a></div>
+    
+
+</body>

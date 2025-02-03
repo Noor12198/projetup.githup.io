@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de surface corporelle</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="calcul_de_surface.js"></script>
+
+</head>
+
+<body>
+        <header> 
+            <h1>Calculateur de surface corporelle</h1>
+        </header>
+        <div class="container">
+            <div class="description">
+                <p>Le calcul de la surface corporelle est utile dans le calcul des doses de certains médicaments ou de divers indices de sévérités de diverses pathologies</p>
+            </div>
+            <p>Taille en cm:</p>
+            <input id="tailleS"type="number" placeholder="Ex: 175"></input>
+            <p>Poids en kg:</p>
+            <input id="poidsS"type="number" placeholder="Ex: 75"></input>
+            <br>
+             <div class="description">
+            <p>La formule de Boyd est ordinairement considérée comme la plus précise mais difficile d'emploi sans calculateur.</p>
+        </div>            
+            <p>calculer d'après la formule de Boyd</p>
+		    <button onclick="calcul_de_surfaceBoyd()">Calculer</button>
+            <br>
+            <br>    
+		    <p>calculer d'après la formule de Dubois</p>
+            <button onclick="calcul_de_surface()">Calculer</button>
+                <div>
+			    <p id="surfaceBoyd"type="number"></p>
+			    <p id document.getElementById('surfaceBoyd').textContent="votre surface corporelle est de "+surfaceBoyd.toFixed(2) +" m²."> </p>
+                </div>
+		    <div>
+			<p id="surface"type="number"></p>
+			<p id document.getElementById('resultat_de_surface').textContent="votre surface corporelle est de "+surface.toFixed(2) +" m²."> </p>
+            </div>
+	
+        </div>
+        <div class="calculator-links"><a href="page d'accueil.html" class="btn">Retour au sommaire</a></div>
+        <footer>
+            
+            <p>El-bahnsy Noor</p>
+			
+        </footer>
+        <script src="calcul_de_surface.js"></script>
+
+</body>
+</html>
